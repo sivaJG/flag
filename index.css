@@ -1,0 +1,81 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.flag::before{
+    content: "";
+    position: absolute;
+    left: -12px;
+    width: 10px;
+    height: 400px;
+    background-color: black;
+    border-radius: 3px;
+    box-shadow: -3px 3px 8px 0px rgba(0,0,0,0.4);
+}
+.flag{
+    margin: 40px auto;
+position: relative;
+height:210px;
+width: 300px;
+animation: flag 3s infinite;
+transform-origin: 0 450px;
+}
+
+@keyframes flag {
+    0%{
+        transform: rotatey(0);
+    }
+    50%{
+        transform: rotateY(-25deg);
+    }
+    100%{
+        transform: rotatey(25deg);
+    }
+}
+.color1{
+    background-color:#ff9933;
+}
+.color2{
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+}
+.color3{
+    background-color:#006400;
+}
+.color{
+    width: 300px;
+    height: 60px;
+}
+.chakra{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: relative;
+    top: 5px;
+    animation: spin 3s infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.textimag{
+    width: 300px;
+    position: relative;
+    left: 500px;
+    animation: zoom 2s infinite;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
